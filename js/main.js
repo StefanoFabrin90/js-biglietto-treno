@@ -13,13 +13,15 @@ console.log('km');
 const price = km * 0.21;
 console.log(price);
 
+
+
 let realPrice;
 
 if ( (age > 18) && (age < 65) ) {
-    realPrice = price;
+    realPrice = price.toFixed(2);
 }  else if (age <= 18) {
-    realPrice = price - (price * 20 / 100);
+    realPrice = price - (price * 20 / 100).toFixed(2);
 }  else if (age >= 65) {
-    realPrice = price - (price * 40 / 100);
+    realPrice = price - (price * 40 / 100).toFixed(2);
 }
 console.log(realPrice);
