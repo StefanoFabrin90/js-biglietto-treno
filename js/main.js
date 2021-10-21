@@ -18,7 +18,7 @@ let realPrice;
 if ( (age > 18) && (age < 65) ) {
     realPrice = price;
 }  else if (age < 18) {
-    realPrice = price / 100 * 20;
+    realPrice = price - (price * 20 / 100);
 }  else if (age > 65) {
-    realPrice = price / 100 * 40;
+    realPrice = price - (price * 40 / 100);
 }
